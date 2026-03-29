@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姚茜文 - 个人作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">姚茜文</div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-page="home">HOME PAGE</a>
+                <a href="#" class="nav-link" data-page="works">WORKS</a>
+                <a href="#" class="nav-link" data-page="about">MY</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="app">
+        <div class="page active" id="page-home">
+            <section class="hero">
+                <div class="container">
+                    <h1 class="hero-title fade-in">姚茜文</h1>
+                    <p class="hero-subtitle fade-in">视觉设计师 / UI设计师 / 空间设计师</p>
+                    <div class="hero-line fade-in"></div>
+                </div>
+            </section>
+
+            <section class="intro">
+                <div class="container">
+                    <p class="intro-text fade-in">
+                        设计是解决问题的艺术。<br>
+                        以功能为核心，用简洁的语言表达复杂的想法。
+                    </p>
+                </div>
+            </section>
+
+            <section class="portfolio">
+                <div class="container">
+                    <h2 class="section-title fade-in">精选作品</h2>
+                    <div class="portfolio-grid" id="portfolio-grid"></div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-contact">
+                            <p>联系我</p>
+                            <a href="mailto:example@email.com">example@email.com</a>
+                        </div>
+                        <div class="footer-year">2024</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="page" id="page-works">
+            <section class="works-page">
+                <div class="container">
+                    <h1 class="page-title fade-in">所有作品</h1>
+                    <div class="portfolio-grid" id="works-grid"></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page" id="page-about">
+            <section class="about-page">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-image fade-in">
+                            <div class="placeholder-image"></div>
+                        </div>
+                        <div class="about-text fade-in">
+                            <h1>关于我</h1>
+                            <p>
+                                我是一名视觉设计师，专注于品牌设计、UI设计和空间设计。
+                                受包豪斯设计理念的影响，我相信设计应该是功能与美学的完美结合。
+                            </p>
+                            <p>
+                                在我的作品中，你会看到简洁的几何形态、清晰的层次结构
+                                和对细节的极致追求。每一个项目都是一次解决问题的过程，
+                                也是一次创造美的旅程。
+                            </p>
+                            <div class="skills">
+                                <div class="skill-item">品牌设计</div>
+                                <div class="skill-item">UI/UX设计</div>
+                                <div class="skill-item">空间设计</div>
+                                <div class="skill-item">书籍设计</div>
+                                <div class="skill-item">包装设计</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page" id="page-detail">
+            <section class="detail-page">
+                <div class="container">
+                    <button class="back-btn fade-in" id="back-btn">← 返回</button>
+                    <div class="detail-content" id="detail-content"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
